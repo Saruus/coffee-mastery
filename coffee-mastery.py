@@ -77,11 +77,8 @@ class Art(Mastery):
         """
         """
         self.basic = Set(["pen","dot","box","fill","grow","scale","twist","mirror","clip","drawon"])
-        self.intermediate = Set(["wear","img","show","hide","ht","st","remove","cs","pu","pd","cg","ct"])
-        self.advanced = Set(["canvas","rgba","rgb","hsl","hsla","fadeIn","fadeOut"])
-
-    #    self.exist = Set(["Webcam","copy"])
-
+        self.intermediate = Set(["wear","img","show","hide","ht","st","remove","cs","pu","pd","cg","ct","copy"])
+        self.advanced = Set(["canvas","rgba","rgb","hsl","hsla","fadeIn","fadeOut","Webcam"])
 
 class Text(Mastery):
     """
@@ -113,12 +110,10 @@ class Control(Mastery):
     def __init__(self):
         """
         """
-        self.basic = Set(["if","in","switch","when","default"])
-        self.intermediate = Set(["for","while","else","button","unless","loop","forever"])
+        self.basic = Set(["if","in","switch","when","default","then"])
+        self.intermediate = Set(["for","while","else","unless","loop","forever","break","stop","tick","continue"])
         self.advanced = Set(["keyup","keypress","dblclick","keydown","mousedown",
-                        "mouseup","mousemove","click","await","defer","lastmousemove"])
-
-        self.exist = Set(["tick","break","continue","stop","then"])
+                        "mouseup","mousemove","click","await","defer","lastmousemove","button"])
 
        
 class Operators(Mastery):
@@ -133,9 +128,7 @@ class Operators(Mastery):
                         "abs","max","min"])
         self.intermediate = Set(["is",'isnt',"and","or","not","true","false","random",
                         "round","ceil","floor","typeof"])
-        self.advanced = Set(["->","return","do","NaN"])
-
-        self.exist = Set(["match","pow","null","Infinity"])
+        self.advanced = Set(["->","return","do","NaN","null","Infinity","match","pow"])
 
 
 def removeComments(string):
